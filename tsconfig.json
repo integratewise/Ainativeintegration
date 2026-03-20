@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/core/*": ["./src/1-core/*"],
+      "@/ui/*": ["./src/2-ui-system/*"],
+      "@/spine/*": ["./src/3-spine-core/*"],
+      "@/shell/*": ["./src/4-workspace-shell/*"],
+      "@/ai/*": ["./src/5-ai-cognitive-layer/*"],
+      "@/landing/*": ["./src/6-landing-marketing/*"],
+      "@/modules/*": ["./src/7-business-modules/*"],
+      "@/domains/*": ["./src/8-domain-workspaces/*"],
+      "@/admin/*": ["./src/9-admin-settings/*"],
+      "@/auth/*": ["./src/10-auth-onboarding/*"],
+      "@/backend/*": ["./src/11-backend/*"],
+      "@/docs/*": ["./src/12-docs-guidelines/*"]
+    }
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
