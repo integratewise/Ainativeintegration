@@ -1,0 +1,339 @@
+/**
+ * IntegrateWise Design Tokens - CSS Custom Properties
+ * 
+ * Import this file to use design tokens as CSS variables.
+ * These can be used independently of Tailwind.
+ * 
+ * Usage:
+ *   color: var(--iw-color-brand-primary);
+ *   padding: var(--iw-spacing-4);
+ * 
+ * @version 1.0.0
+ */
+
+:root {
+  /* ========================================
+     COLORS - BRAND
+     ======================================== */
+  --iw-color-brand-primary: #3F5185;
+  --iw-color-brand-primary-light: #4256AB;
+  --iw-color-brand-primary-deep: #4152A1;
+  --iw-color-brand-primary-dark: #354890;
+  --iw-color-brand-accent: #F54476;
+  --iw-color-brand-accent-hover: #EE4B75;
+  --iw-color-brand-accent-dark: #D93D65;
+
+  /* ========================================
+     COLORS - SEMANTIC
+     ======================================== */
+  --iw-color-success: #00C853;
+  --iw-color-success-alt: #3D8B6E;
+  --iw-color-warning: #FF9800;
+  --iw-color-warning-alt: #D4883E;
+  --iw-color-danger: #F54476;
+  --iw-color-danger-alt: #DC4A4A;
+  --iw-color-info: #7B9BFF;
+
+  /* ========================================
+     COLORS - FLOWS
+     ======================================== */
+  --iw-color-flow-a: #3F5185;    /* Structured Data */
+  --iw-color-flow-b: #7B5EA7;    /* Unstructured Data */
+  --iw-color-flow-c: #00C853;    /* AI Chats */
+
+  /* ========================================
+     COLORS - INTELLIGENCE
+     ======================================== */
+  --iw-color-intelligence-spine: #5FA8D3;
+  --iw-color-intelligence-hub: #9B6DC6;
+  --iw-color-intelligence-agent: #6BC77A;
+  --iw-color-intelligence-overlay-bg: rgba(16, 42, 67, 0.94);
+  --iw-color-intelligence-overlay-surface: #1A2E42;
+
+  /* ========================================
+     COLORS - NEUTRALS
+     ======================================== */
+  --iw-color-neutral-50: #F5F6FA;
+  --iw-color-neutral-100: #EDF0F5;
+  --iw-color-neutral-200: #DDE3EC;
+  --iw-color-neutral-300: #D8DEE8;
+  --iw-color-neutral-400: #B0B8C5;
+  --iw-color-neutral-500: #64748B;
+  --iw-color-neutral-600: #475569;
+  --iw-color-neutral-700: #334155;
+  --iw-color-neutral-800: #1E293B;
+  --iw-color-neutral-900: #102A43;
+  --iw-color-neutral-white: #FFFFFF;
+
+  /* ========================================
+     COLORS - CHARTS
+     ======================================== */
+  --iw-color-chart-1: #4256AB;
+  --iw-color-chart-2: #3D8B6E;
+  --iw-color-chart-3: #D4883E;
+  --iw-color-chart-4: #7B5EA7;
+  --iw-color-chart-5: #EE4B75;
+
+  /* ========================================
+     TYPOGRAPHY - FONT FAMILIES
+     ======================================== */
+  --iw-font-family-sans: 'Inter', system-ui, sans-serif;
+  --iw-font-family-mono: 'JetBrains Mono', monospace;
+
+  /* ========================================
+     TYPOGRAPHY - FONT SIZES
+     ======================================== */
+  --iw-font-size-xs: 0.75rem;      /* 12px */
+  --iw-font-size-sm: 0.875rem;     /* 14px */
+  --iw-font-size-base: 1rem;       /* 14px (root is 14px) */
+  --iw-font-size-lg: 1.125rem;     /* ~16px */
+  --iw-font-size-xl: 1.25rem;      /* ~18px */
+  --iw-font-size-2xl: 1.5rem;      /* ~21px */
+  --iw-font-size-3xl: 1.875rem;    /* ~26px */
+  --iw-font-size-4xl: 2.25rem;     /* ~32px */
+
+  /* ========================================
+     TYPOGRAPHY - FONT WEIGHTS
+     ======================================== */
+  --iw-font-weight-light: 300;
+  --iw-font-weight-normal: 400;
+  --iw-font-weight-medium: 500;
+  --iw-font-weight-semibold: 600;
+  --iw-font-weight-bold: 700;
+  --iw-font-weight-extrabold: 800;
+
+  /* ========================================
+     TYPOGRAPHY - LINE HEIGHTS
+     ======================================== */
+  --iw-line-height-tight: 1.25;
+  --iw-line-height-normal: 1.5;
+  --iw-line-height-relaxed: 1.75;
+  --iw-line-height-loose: 2;
+
+  /* ========================================
+     TYPOGRAPHY - LETTER SPACING
+     ======================================== */
+  --iw-letter-spacing-tighter: -0.05em;
+  --iw-letter-spacing-tight: -0.025em;
+  --iw-letter-spacing-normal: 0em;
+  --iw-letter-spacing-wide: 0.025em;
+  --iw-letter-spacing-wider: 0.05em;
+  --iw-letter-spacing-widest: 0.1em;
+
+  /* ========================================
+     SPACING
+     ======================================== */
+  --iw-spacing-0: 0rem;
+  --iw-spacing-1: 0.25rem;    /* 4px */
+  --iw-spacing-2: 0.5rem;     /* 8px */
+  --iw-spacing-3: 0.75rem;    /* 12px */
+  --iw-spacing-4: 1rem;       /* 16px */
+  --iw-spacing-5: 1.25rem;    /* 20px */
+  --iw-spacing-6: 1.5rem;     /* 24px */
+  --iw-spacing-8: 2rem;       /* 32px */
+  --iw-spacing-10: 2.5rem;    /* 40px */
+  --iw-spacing-12: 3rem;      /* 48px */
+  --iw-spacing-16: 4rem;      /* 64px */
+  --iw-spacing-20: 5rem;      /* 80px */
+  --iw-spacing-24: 6rem;      /* 96px */
+
+  /* ========================================
+     BORDER RADIUS
+     ======================================== */
+  --iw-radius-none: 0rem;
+  --iw-radius-sm: 0.125rem;   /* 2px */
+  --iw-radius-md: 0.25rem;    /* 4px */
+  --iw-radius-base: 0.5rem;   /* 8px */
+  --iw-radius-lg: 0.75rem;    /* 12px */
+  --iw-radius-xl: 1rem;       /* 16px */
+  --iw-radius-2xl: 1.5rem;    /* 24px */
+  --iw-radius-3xl: 2rem;      /* 32px */
+  --iw-radius-full: 9999px;
+
+  /* ========================================
+     SHADOWS
+     ======================================== */
+  --iw-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --iw-shadow-base: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  --iw-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --iw-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --iw-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  --iw-shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  /* ========================================
+     TRANSITIONS
+     ======================================== */
+  --iw-transition-duration-fast: 150ms;
+  --iw-transition-duration-base: 200ms;
+  --iw-transition-duration-slow: 300ms;
+  --iw-transition-duration-slower: 500ms;
+
+  --iw-transition-easing-linear: cubic-bezier(0, 0, 1, 1);
+  --iw-transition-easing-ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --iw-transition-easing-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --iw-transition-easing-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --iw-transition-easing-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ========================================
+     BREAKPOINTS (for reference)
+     ======================================== */
+  --iw-breakpoint-sm: 640px;
+  --iw-breakpoint-md: 768px;
+  --iw-breakpoint-lg: 1024px;
+  --iw-breakpoint-xl: 1280px;
+  --iw-breakpoint-2xl: 1536px;
+
+  /* ========================================
+     Z-INDEX
+     ======================================== */
+  --iw-z-index-base: 0;
+  --iw-z-index-dropdown: 10;
+  --iw-z-index-sticky: 20;
+  --iw-z-index-fixed: 30;
+  --iw-z-index-overlay: 40;
+  --iw-z-index-modal: 50;
+  --iw-z-index-toast: 60;
+}
+
+/* ========================================
+   COMPONENT-SPECIFIC TOKENS
+   ======================================== */
+
+/* Buttons */
+.iw-button-primary {
+  background-color: var(--iw-color-brand-primary);
+  color: var(--iw-color-neutral-white);
+  border-radius: var(--iw-radius-lg);
+  padding: var(--iw-spacing-3) var(--iw-spacing-6);
+  font-size: var(--iw-font-size-base);
+  font-weight: var(--iw-font-weight-medium);
+  transition: all var(--iw-transition-duration-base) var(--iw-transition-easing-ease-out);
+}
+
+.iw-button-primary:hover {
+  background-color: var(--iw-color-brand-primary-dark);
+}
+
+.iw-button-accent {
+  background-color: var(--iw-color-brand-accent);
+  color: var(--iw-color-neutral-white);
+  border-radius: var(--iw-radius-lg);
+  padding: var(--iw-spacing-3) var(--iw-spacing-6);
+}
+
+.iw-button-accent:hover {
+  background-color: var(--iw-color-brand-accent-dark);
+}
+
+/* Cards */
+.iw-card {
+  background-color: var(--iw-color-neutral-white);
+  border: 1px solid var(--iw-color-neutral-300);
+  border-radius: var(--iw-radius-2xl);
+  padding: var(--iw-spacing-6);
+  box-shadow: var(--iw-shadow-base);
+}
+
+.iw-card:hover {
+  box-shadow: var(--iw-shadow-md);
+}
+
+/* Inputs */
+.iw-input {
+  background-color: var(--iw-color-neutral-100);
+  border: 1px solid var(--iw-color-neutral-300);
+  border-radius: var(--iw-radius-lg);
+  padding: var(--iw-spacing-3) var(--iw-spacing-4);
+  font-size: var(--iw-font-size-base);
+  font-weight: var(--iw-font-weight-normal);
+  transition: border-color var(--iw-transition-duration-base) var(--iw-transition-easing-ease-out);
+}
+
+.iw-input:focus {
+  border: 2px solid var(--iw-color-brand-primary);
+  outline: none;
+}
+
+/* Badges */
+.iw-badge {
+  border-radius: var(--iw-radius-full);
+  padding: var(--iw-spacing-1) var(--iw-spacing-3);
+  font-size: var(--iw-font-size-xs);
+  font-weight: var(--iw-font-weight-medium);
+}
+
+.iw-badge-primary {
+  background-color: color-mix(in srgb, var(--iw-color-brand-primary) 10%, transparent);
+  color: var(--iw-color-brand-primary);
+}
+
+.iw-badge-success {
+  background-color: color-mix(in srgb, var(--iw-color-success) 10%, transparent);
+  color: var(--iw-color-success);
+}
+
+.iw-badge-warning {
+  background-color: color-mix(in srgb, var(--iw-color-warning) 10%, transparent);
+  color: var(--iw-color-warning);
+}
+
+/* Flow Badges */
+.iw-badge-flow-a {
+  background-color: color-mix(in srgb, var(--iw-color-flow-a) 10%, transparent);
+  color: var(--iw-color-flow-a);
+}
+
+.iw-badge-flow-b {
+  background-color: color-mix(in srgb, var(--iw-color-flow-b) 10%, transparent);
+  color: var(--iw-color-flow-b);
+}
+
+.iw-badge-flow-c {
+  background-color: color-mix(in srgb, var(--iw-color-flow-c) 10%, transparent);
+  color: var(--iw-color-flow-c);
+}
+
+/* Modals */
+.iw-modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: var(--iw-z-index-overlay);
+}
+
+.iw-modal {
+  background-color: var(--iw-color-neutral-white);
+  border-radius: var(--iw-radius-3xl);
+  padding: var(--iw-spacing-12);
+  box-shadow: var(--iw-shadow-2xl);
+  max-width: 42rem;
+  z-index: var(--iw-z-index-modal);
+}
+
+/* Utility Classes */
+.iw-text-primary {
+  color: var(--iw-color-brand-primary);
+}
+
+.iw-text-accent {
+  color: var(--iw-color-brand-accent);
+}
+
+.iw-bg-primary {
+  background-color: var(--iw-color-brand-primary);
+}
+
+.iw-bg-accent {
+  background-color: var(--iw-color-brand-accent);
+}
+
+/* Gradients */
+.iw-gradient-primary {
+  background: linear-gradient(135deg, var(--iw-color-brand-primary), var(--iw-color-brand-primary-light));
+}
+
+.iw-gradient-accent {
+  background: linear-gradient(135deg, var(--iw-color-brand-accent), var(--iw-color-brand-accent-hover));
+}
+
+.iw-gradient-flow-primary {
+  background: linear-gradient(to right, var(--iw-color-brand-primary), var(--iw-color-brand-accent));
+}
